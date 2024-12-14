@@ -7,9 +7,9 @@ import Image from 'next/image';
 import { satoshi } from '@/lib/fonts'
 export default function WhatWeDo() {
     return (
-        <div className={`relative w-full min-h-screen py-6 px-4 sm:px-6 lg:px-8 ${clashGrotesk.className}`}>
+        <div className={`2xl:min-h-0 relative w-full min-h-screen py-6 px-4 sm:px-6 lg:px-8  ${clashGrotesk.className}`}>
             {/* Background Image */}
-            <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute inset-0 overflow-hidden 2xl:h-[50rem]">
                 <Image
                     src="/whatWeDo/whatwedobackgroungraidient.webp"
                     alt="Background Design"
@@ -18,30 +18,30 @@ export default function WhatWeDo() {
                     className="object-cover object-center opacity-100"
                     quality={100}
                 />
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-black/50 " />
             </div>
 
             {/* Content */}
             <div className="relative max-w-7xl mx-auto">
-                <div className='flex justify-center items-center'>
-                    <h2 className="text-center text-3xl font-medium text-white mb-12 lg:top-[1rem]">
+                <div className='flex justify-center items-center relative 2xl:top-[1rem]'>
+                    <h2 className="text-center text-3xl font-medium text-white mb-12 lg:top-[1rem] ">
                         What We Do?
                         <span className='text-purple-500 flex justify-center items-center relative top-[-12px] mb-0'>_______</span>
                     </h2>
 
                 </div>
 
-                <div className="inset-0 z-100 p-8 lg:p-12 w-[21rem] h-[60rem] sm:w-[40rem] md:w-[55rem] md:h-[38rem] md:left-[6rem] relative overflow-hidden sm:h-[55rem] xl:h-[33rem] xl:w-[70rem] xl:left-[4.8rem] xl:justify-center lg:w-[60rem] xl:items-center xl:rounded-[23px] xl:top-[-3rem] 2xl:w-[90rem] 2xl:h-[30rem] 2xl:right-[-20rem] 2xl:rounded-[23px] 2xl:top-[-2rem] rounded-[40px] object-cover object-center opacity-100 ">
+                <div className="inset-0 z-100 p-8 lg:p-12 w-[21rem] h-[60rem] sm:w-[40rem] md:w-[55rem] md:h-[38rem] md:left-[6rem] relative overflow-hidden sm:h-[55rem] xl:h-[33rem] xl:w-[70rem] xl:left-[4.8rem] xl:justify-center lg:w-[60rem] xl:items-center xl:rounded-[23px] xl:top-[-3rem] 2xl:w-[82rem] 2xl:h-[36rem] 2xl:left-[-1rem] 2xl:rounded-[23px] 2xl:top-[-1rem] rounded-[40px] object-cover object-center opacity-100 ">
                     <Image
                         src="/whatWeDo/Whatwedobox penbackground-01.png"
                         alt="Card Background"
                         fill
                         className=""
                     />
-                    <div className={`${clashGrotesk.className} lg:flex lg:gap-12 relative z-30`}>
+                    <div className={`${clashGrotesk.className} lg:flex lg:gap-12 relative z-30 2xl:top-[2rem]`}>
                         {/* Left Column - Main Content */}
                         <div className="relative lg:w-1/2 space-y-8 mb-8 lg:mb-0 xl:top-[-0.5rem] xl:left-[4rem]">
-                            <h3 className="text-4xl lg:text-5xl font-bold text-white xl:leading-[1.2em] xl:text-[2em]">
+                            <h3 className="text-4xl lg:text-5xl font-bold text-white xl:leading-[1.2em] xl:text-[2em] ">
                                 A Full-Service of
                                 <br />
                                 Design, Branding
@@ -139,7 +139,7 @@ function TestimonialCarousel() {
             <div className='relative xl:top-[-0.6rem] xl:left-[-1rem]'>
                 <div>
                     <div className={`${satoshi.className} flex justify-center items-center relative top-[15rem] left-[-10rem]`}>
-                        <button className="bg-[#6F00FF] hover:bg-purple-[#6F00FF] shadow-sm  shadow-[#6F00FF] border-2 border-[#7F00FF] text-white mt-20 ml-80 px-12 lg:px-8 h-[2rem] md:py-1 flex rounded-full text-lg font-bold transition-all duration-200 relative md:top-6 transform hover:scale-105 hover:shadow-[#7F00FF] top-[-9rem] sm:top-[2rem] lg:top-[-3rem] lg:left-[3.5rem] xl:top-[-7em] xl:left-[2.3rem] xl:py-1 xl:h-[2.4rem] xl:px-5 xl:w-[7.5rem] ">
+                        <button className="bg-[#6F00FF] hover:bg-purple-[#6F00FF] shadow-sm  shadow-[#6F00FF] border-2 border-[#6F00FF] text-white mt-20 ml-80 px-12 lg:px-8 h-[2rem] md:py-1 flex rounded-full text-lg font-bold transition-all duration-200 relative md:top-6 transform hover:scale-105 hover:shadow-[#7F00FF] top-[-9rem] sm:top-[2rem] lg:top-[-3rem] lg:left-[3.5rem] xl:top-[-7em] xl:left-[2.3rem] xl:py-1 xl:h-[2.4rem] xl:px-5 xl:w-[7.5rem] ">
                             <span className='space-x-1 mr-1'>About</span> <span className='space-x-1'> Us</span>
                         </button>
                     </div>

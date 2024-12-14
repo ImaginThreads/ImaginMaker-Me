@@ -9,6 +9,7 @@ import { clashGrotesk } from '@/lib/clashGroteskfont';
 import { LogoMarquee } from '@/components/HeroLogoSection';
 import AnimatedCarousel from '@/components/Homecarousels';
 import WhatWeDo from '@/components/WhatWeDo';
+import HeroServices from '@/components/HeroServices'
 import { satoshi } from '@/lib/fonts';
 
 // import Footer from '@/components/Footer';
@@ -24,6 +25,7 @@ export default function Home() {
       <LogoMarquee/>
       <AnimatedCarousel/>
       <WhatWeDo/>
+      <HeroServices/>
     </main>
   )
 }

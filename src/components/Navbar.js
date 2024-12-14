@@ -13,12 +13,12 @@ const Navbar = () => {
     return (
         <nav
             className={cn(
-                "fixed top-0 w-full z-50 bg-black py-4 px-6",
+                "fixed top-0 w-full z-50 bg-black py-4 2xl:py-7 px-6 shadow-[gray_0px_0px_4px_0px]",
                 satoshi.className
             )}
         >
             <div className="max-w-7xl mx-auto flex items-center">
-                <div className="flex items-center justify-between flex-1 md:flex-none">
+                <div className="flex items-center justify-between flex-1 md:flex-none relative 2xl:left-[-6rem]">
                     {/* Logo */}
                     <Link href="/" aria-label="Home">
                         <Logo />
@@ -26,7 +26,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden text-white"
+                        className="md:hidden text-white relative "
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label="Toggle menu"
                     >
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <div className="hidden md:flex-1 md:flex items-center justify-center space-x-8">
+                <div className="hidden md:flex-1 md:flex items-center justify-center space-x-8 2xl:space-x-20 relative 2xl:left-[12rem]">
                     {["Case Study", "Journel", "Services", "Our Values"].map((item) => (
                         <Link
                             key={item}
@@ -47,10 +47,10 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                <div className="hidden md:block flex-1 text-right">
+                <div className="hidden md:block flex-1 text-right relative 2xl:left-[6rem]">
                     <Link
                         href="/contact"
-                        className="bg-gradient-to-l from-[#9F00FF] via-[#6F00FF] to-[#6F00FF] text-white px-6 py-2 rounded-full hover:opacity-90 transition-all duration-300"
+                        className="bg-gradient-to-r from-[#7D40FF] via-[#6F00FF] to-[#8F00FF] text-white px-6 py-2 2xl:py-[10px] rounded-full hover:opacity-90 transition-all duration-300 font-medium"
                     >
                         Contact Us
                     </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
                         ))}
                         <Link
                             href="/contact"
-                            className="bg-gradient-to-r from-[#FFFFFF] via-[#6F00FF] to-[#6F00FF] text-white px-6 py-2 rounded-full hover:opacity-90 transition-all duration-300"
+                            className="bg-gradient-to-r from-[#6F00FF] via-[#6F00FF] to-[#8F00FF] text-white px-6 py-2 rounded-full hover:opacity-90 transition-all duration-300"
                             onClick={() => setIsOpen(false)}
                         >
                             Contact Us

@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { ArrowRight, Heart } from 'lucide-react';
 import { cn } from "@/lib/utils";
-import { clashGrotesk } from "@/lib/clashGroteskfont"
+import { clashGrotesk } from "@/lib/clashGroteskfont";
+import { satoshi } from '@/lib/fonts';
 import HomeStar from './ui/star';
 
 export default function HeroSection() {
   return (
-    <section className="h-[90vh] relative overflow-hidden">
+    <section className="h-[90vh] 2xl:h-[70vh] relative overflow-hidden">
       <Image
         src="/HeroSection/herobg.jpg"
         alt="Hero background"
@@ -18,10 +19,10 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black bg-opacity-0" />
       <div className="container mx-auto px-4 py-20 md:py-32 flex flex-col justify-center h-full relative z-10">
         <div className="max-w-4xl lg:mx-24">
-          <div className='relative top-28'>
+          <div className='relative top-28 2xl:left-[-2rem]'>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
               We are{" "}
-              <span className="relative inline-block font-medium text-[#9F00FF]">
+              <span className="relative inline-block font-medium text-[#7D40FF]">
                 Creative
                 <span className="absolute -top-1 -right-4 text-[#6F00FF]">
                   <HomeStar />
@@ -70,8 +71,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="space-y-8 flex flex-col items-center relative right-[10rem] top-8 md:left-[-5rem]">
-            <button className="bg-[#8F00FF] hover:bg-purple-[#6F00FF] shadow-[#8F00FF] border-2 border-[#9F00FF] text-white mt-20 ml-80 px-12 lg:px-8 py-0 md:py-1 flex rounded-full text-lg font-regular transition-all duration-200 relative md:top-6 transform hover:scale-105 shadow-sm hover:shadow-purple-500/25">
+          <div className="space-y-8 flex flex-col items-center relative right-[10rem] top-8 md:left-[-5rem] 2xl:left-[1rem] 2xl:top-[3rem]">
+            <button className={`${satoshi.className} bg-[#7D40FF] hover:bg-purple-[#6F00FF] shadow-[#8F00FF] border-2 border-[#7D40FF] text-white mt-20 ml-80 px-12 2xl:py-[6px] 2xl:px-[28px] lg:px-8 py-0 md:py-1 flex rounded-full text-lg font-bold transition-all duration-200 relative md:top-6 transform hover:scale-105 shadow-sm hover:shadow-purple-500/25`}>
               See Plans
             </button>
 
