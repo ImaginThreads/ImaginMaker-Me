@@ -73,6 +73,9 @@ export default function WhatWeDo() {
                         {/* Right Column - Carousel */}
                         <div className="lg:w-1/2 lg:flex lg:items-center">
                             <TestimonialCarousel />
+
+
+                            bjhydsgvcfyhz
                         </div>
                     </div>
                 </div>
