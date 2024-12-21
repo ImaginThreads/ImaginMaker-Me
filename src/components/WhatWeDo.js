@@ -25,7 +25,7 @@ export default function WhatWeDo() {
             <div className="relative max-w-7xl mx-auto">
                 <div className='flex justify-center items-center relative 2xl:top-[1rem]'>
                     <h2 className="text-center text-3xl font-medium text-white mb-12 lg:top-[1rem] ">
-                        What We Do?
+                        What We Do ...?
                         <span className='text-purple-500 flex justify-center items-center relative top-[-12px] mb-0'>_______</span>
                     </h2>
 
