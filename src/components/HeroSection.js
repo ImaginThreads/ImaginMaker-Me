@@ -7,7 +7,7 @@ import HomeStar from './ui/star';
 
 export default function HeroSection() {
   return (
-    <section className="h-[90vh] 2xl:h-[70vh] relative overflow-hidden">
+    <section className="h-[60vh] xl:h-[90vh] 2xl:h-[80vh] relative overflow-hidden">
       <Image
         src="/HeroSection/herobg.jpg"
         alt="Hero background"
@@ -17,7 +17,7 @@ export default function HeroSection() {
         priority
       />
       <div className="absolute inset-0 bg-black bg-opacity-0" />
-      <div className="container mx-auto px-4 py-20 md:py-32 flex flex-col justify-center h-full relative z-10">
+      <div className="container mx-auto px-4 py-16 md:py-32 flex flex-col justify-center h-full relative z-10  ">
         <div className="max-w-4xl lg:mx-24">
           <div className='relative top-28 2xl:left-[-2rem]'>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
@@ -76,7 +76,7 @@ export default function HeroSection() {
               See Plans
             </button>
 
-            <div className="flex items-center gap-2 text-gray-300 ml-80">
+            <div className="hidden md:flex items-center gap-2 text-gray-300 ml-80">
               <span className='flex relative'> Designs <span className='space-x-3'> you&apos;ll</span>
               </span>
               <span className="text-purple-500 text-2xl">❤️</span>
