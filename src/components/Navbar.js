@@ -77,7 +77,7 @@ const Navbar = () => {
                             className="bg-gradient-to-r from-[#6F00FF] via-[#6F00FF] to-[#8F00FF] text-white px-6 py-2 rounded-full hover:opacity-90 transition-all duration-300"
                             onClick={() => setIsOpen(false)}
                         >
-                            Contact Us
+                            Contact  Us
                         </Link>
                     </div>
                 </div>
