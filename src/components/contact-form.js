@@ -35,7 +35,7 @@ export default function ContactForm() {
                         </h2>
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[10rem] h-1 bg-[#7D40FF]"></div>
                     </div>
-                    <p className={`${satoshi.className} text-base md:text-lg text-[#191919] max-w-2xl mx-auto mt-6 font-medium px-[5.5rem]`}>
+                    <p className={`${satoshi.className} text-base md:text-lg text-[#191919] max-w-2xl mx-auto mt-6 font-medium px-[5.6rem]`}>
                         Bring your next project to life. Please fill in the information below and one of our consultants will reach out to you today!
                     </p>
                 </div>
